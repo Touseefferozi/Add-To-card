@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"
+        integrity="sha256-UnTxHm+zKuDPLfufgEMnKGXDl6fEIjtM+n1Q6lL73ok=" crossorigin="anonymous"></script>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+
+
+    <style>
+        .link-text h5 {
+            background-color: #111;
+            color: white;
+            width: 48%;
+            padding: 2px 1px;
+            height: 34px;
+        }
+
+        .link-text {
+            margin-left: 12pc;
+        }
+        
+        .link-text p {
+            margin-left: 0pc;
+            margin-top: 2pc;
+        }
+        
+        .link-text h5 {
+            background-color: #111;
+            color: white;
+            width: 46%;
+        }
+        
+        .link {
+            filter: drop-shadow(2px 4px 6px black);
+        }
+        
+        
+        /* close  */
+        
+        .card-img-top {
+            width: 100%;
+        }
+
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="link">
+                    <img src="https://rawayat.com.pk/cdn/shop/products/WhatsAppImage2023-03-22at6.37.17PM_1800x1800.jpg?v=1679492818"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="link-text">
+                    <h3>Madrasi Openable Kara-22</h3>
+
+
+                    <div class="icons">
+                        <span id="rateMe1"><i class="bi bi-star"></i><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span></span>
+                    </div>
+
+                    <p> 19 sold in last 19 hours</p>
+                    <h4>Rs.1,200.00</h4>
+                    <h5>Hurry, Only 7 left!</h5>
+                    <p> Delivery & Returns Enquiry</p>
+                    <a href=""><button class="btn btn-dark">ADD TO CART</button></a>
+
+
+                    <p> 22 Persons looking for this product</p>
+                    <button type="button" class="collapsible">DETAILS</button>
+                    <div class="content-1">
+                        <p>* Gold Platted Kara Pair</p>
+                        <p>* Standard Size and Openable</p>
+                        <p>* Size can be used for 2.6(Sawa 2) , 2.8 (Dhai)</p>
+                        <p>* Pair price is Rs 999/-</p>
+                        <p>* Make Sure to Wear them after using Perfume</p>
+                    </div>
+
+                    <p>REVIEWS</p>
+                    <button type="button" class="collapsible">REVIEWS</button>
+                    <div class="content">
+                        <br>
+                        <div class="icons">
+                            <span id="rateMe1"><i class="bi bi-star"></i><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span></span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+        
+
+            <!-- close  -->
+
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+                integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+
+            <script>
+                function openNav() {
+                    document.getElementById("mySidebar").style.width = "250px";
+                    document.getElementById("main").style.marginLeft = "250px";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidebar").style.width = "0";
+                    document.getElementById("main").style.marginLeft = "0";
+                }
+            </script>
+
+            <script>
+                // rating temp 
+                $(document).ready(function () {
+                    $('#rateMe1').mdbRate();
+                });
+            </script>
+
+
+
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                            content.style.display = "none";
+                        } else {
+                            content.style.display = "block";
+                        }
+                    });
+                }
+            </script>
+
+</body>
+
+</html>
